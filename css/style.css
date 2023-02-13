@@ -37,21 +37,56 @@ a {
   position: relative;
   margin-bottom: 65px;
   width: 100%;
-  background-color: gray;
 }
 .slider .slider-img img {
   display: block;
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 .slider .slider-content {
   display: flex;
   flex-direction: column;
-  width: 15%;
-  margin-top: 25%;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 15%;
   margin-left: 5%;
-  background-color: aqua;
   position: absolute;
   top: 10px;
+}
+.slider .slider-content .slider-sub-title {
+  color: #494949;
+  font-size: 16px;
+  font-weight: 500;
+}
+.slider .slider-content .slider-title {
+  font-size: 35px;
+  width: 700;
+}
+.slider .slider-content .slider-action {
+  margin-top: 16px;
+  display: block;
+  width: fit-content;
+  padding: 16px;
+  color: #007aff;
+  border: 3px solid #007aff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dots-slider {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 10px;
+}
+.dots-slider .dot-slider {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 8px;
 }
 
 .wrap-offer {

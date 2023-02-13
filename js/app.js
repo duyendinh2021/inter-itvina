@@ -6,6 +6,7 @@ var carousel_bast_saller = $("#carousel-bast-saller");
 var carousel_category = $("#carousel-category");
 var carousel_deals_month = $("#carousel-deals-month");
 var carousel_catalog = $("#carousel-catalog");
+var carousel_slider = $("#carousel-slider");
 recent.owlCarousel({
   loop: true,
   nav: true,
@@ -192,6 +193,28 @@ carousel_catalog.owlCarousel({
     },
     1200: {
       items: 5,
+    },
+  },
+});
+
+carousel_slider.owlCarousel({
+  loop: true,
+  dots: true,
+  autoplayTimeout: 2000,
+  dotsClass: "dots-slider",
+  dotClass: "dot-slider",
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    960: {
+      items: 1,
+    },
+    1200: {
+      items: 1,
     },
   },
 });
