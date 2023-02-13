@@ -1,0 +1,25 @@
+.slider {
+  display: block;
+  position: relative;
+  margin-bottom: 65px;
+  width: 100%;
+  background-color: gray;
+  .slider-img {
+    img {
+      display: block;
+      width: 100%;
+      //   height: fit-content;
+    }
+  }
+
+  .slider-content {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-top: 25%;
+    margin-left: 5%;
+    background-color: aqua;
+    position: absolute;
+    top: 10px;
+  }
+}

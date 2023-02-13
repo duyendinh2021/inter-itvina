@@ -1,0 +1,27 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    .feature-img {
+      color: $color-blue;
+      display: block;
+      width: 70px;
+    }
+    .feature-body {
+      padding: 20px 5px;
+    }
+    .feature-title {
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .feature-content {
+      font-size: 14px;
+    }
+  }
+}

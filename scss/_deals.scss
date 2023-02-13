@@ -1,0 +1,81 @@
+.today-deals-bkg {
+  background-color: $color-bgk;
+  margin-bottom: 90px;
+  .today-deals {
+    display: block;
+    .warp-content-deals {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .deals-title {
+        font-size: 50px;
+        font-weight: 500;
+        margin-top: 65px;
+      }
+      .wrap-deals-menu {
+        margin-top: 35px;
+        .deal-menu {
+          display: flex;
+          .deal-item-menu {
+            display: block;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: 500;
+            a {
+              color: #919191;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-today-deals {
+    padding: 30px 0;
+    .deals-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .deal-item {
+        background-color: white;
+        width: 420px;
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        .deal-img {
+          margin: 5px;
+          padding: 5px;
+          display: block;
+          width: 150px;
+          object-fit: cover;
+        }
+
+        .deal-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-top: 15px;
+          .product-price-deal {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+          }
+          .deal-link {
+            display: block;
+            width: auto;
+            height: 20px;
+          }
+          .star-deal {
+            font-size: 16px;
+            margin-top: 20px;
+            color: $color-star;
+            .base-review {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

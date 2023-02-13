@@ -1,0 +1,44 @@
+.other-products {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1ft;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+  margin-bottom: 90px;
+  .status-products {
+    .status-products-title {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    .product-item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: start;
+      margin-bottom: 5px;
+      .product-body {
+        margin-top: 10px;
+        .star {
+          font-size: 150%;
+          color: $color-star;
+        }
+      }
+      .product-title {
+        font-weight: 500;
+      }
+      .product-img {
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+      }
+      .product-price {
+        color: $color-blue;
+      }
+    }
+  }
+}

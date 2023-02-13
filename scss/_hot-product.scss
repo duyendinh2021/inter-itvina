@@ -1,0 +1,61 @@
+.hot-product {
+  margin-bottom: 90px;
+  .hot-item {
+    .car-product {
+      height: 75%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transition: 0.75s;
+      .action-hover {
+        display: none;
+      }
+      &:hover {
+        border: 1px solid $color-blue;
+        border-radius: 4px;
+        .action-hover {
+          display: flex;
+          justify-content: space-between;
+          height: 50px;
+          flex-direction: column;
+          position: absolute;
+          top: 40px;
+          left: 50px;
+        }
+        .product-body > .add-to-cart {
+          display: block;
+        }
+        .product-price {
+          display: none;
+        }
+      }
+      .product-img {
+        margin: 10px auto;
+        display: block;
+        align-items: center;
+        width: 65%;
+        height: 70%;
+      }
+      .product-body {
+        display: block;
+        width: 100%;
+        text-align: center;
+        .add-to-cart {
+          display: none;
+          color: $color-blue;
+        }
+        .product-price {
+          color: $color-blue;
+          font-size: 18;
+          font-weight: 500;
+        }
+        .product-title {
+          margin: 5px;
+          font-size: 14;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
